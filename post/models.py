@@ -12,8 +12,12 @@ class Post(BaseModel):
     context = models.TextField()
     like_count = models.PositiveBigIntegerField()
     view_count = models.PositiveBigIntegerField()
+    count = models.IntegerField(blank=True, null=True)
 
     def count_view(self, id):
         post = Post.objects.get(id=id)
         post.view_count += 1
         post.save()
+
+    def __str__(self):
+        return self.title

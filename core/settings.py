@@ -39,7 +39,12 @@ INSTALLED_APPS = [
     'common',
     'post',
     'rest_framework',
-    "rest_framework.authtoken"
+    "rest_framework.authtoken",
+
+    'drf_yasg',
+    'job',
+    'django_filters'
+
 ]
 
 MIDDLEWARE = [

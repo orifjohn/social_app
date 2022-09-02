@@ -1,1 +1,1 @@
-# CLC-boilerplate
+Social app
